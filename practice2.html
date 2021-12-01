@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button hover</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 360px;
+        }
+        .btn{
+            padding: 10px 20px;
+            font-family: "montserrat";
+            border: 1px solid rgb(62, 171, 235);
+            background: none;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.8s;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn1,.btn2{
+            color: rgb(62, 171, 235);
+
+        }
+        .btn3,.btn4{
+            color: white;
+        }
+        .btn1:hover,.btn2:hover{
+            color: white;
+        }
+        .btn3:hover,.btn4:hover{
+            color: rgb(62, 171, 235)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn1">Hover Me</button>
+        <button class="btn btn2">Hover Me</button>
+        <button class="btn btn3">Hover Me</button>
+        <button class="btn btn4">Hover Me</button>
+    </div>
+</body>
+
+</html>

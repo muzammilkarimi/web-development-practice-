@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        a[target='_blank']{
+            color: brown;
+            font-size: 30px;
+
+        }
+        li:nth-child(even){
+            background-color: darkgoldenrod;
+            
+        }
+        input[type='text']{
+            border: 2px solid red
+            
+        }
+        .item:nth-child(odd){
+            background-color: royalblue;
+        }
+        .item{
+            text-decoration: none;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <a href="http://googel.com" target="_blank">go to google</a>
+        <input type="text" placeholder="Enter your name"> 
+        <input type="password" placeholder="Enter your password"> 
+    </form>
+    <ul>
+        <li class="item" id="iem-1">Item1</li>
+        <li class="item" id="iem-2">Item2</li>
+        <li class="item" id="iem-3">Item3</li>
+        <li class="item" id="iem-4">Item4</li>
+        <li class="item" id="iem-5">Item5</li>
+        <li class="item" id="iem-6">Item6</li>
+        <li class="item" id="iem-7">Item7</li>
+        <li class="item" id="iem-8">Item8</li>
+        <li class="item" id="iem-9">Item9</li>
+        <li class="item" id="iem-10">Item10</li>
+        <li class="item" id="iem-11">Item11</li>
+        <li class="item" id="iem-12">Item12</li>
+    </ul>
+</div>
+</body>
+</html>

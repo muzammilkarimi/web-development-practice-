@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+    
+        }
+        .box{
+            display: flex;
+            background-color: grey;
+            width: 50px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            margin: -210px auto;
+            animation-name: life;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-fill-mode: backwards;
+            animation-timing-function: ease-in;
+        }
+        @keyframes life {
+            from{
+                width: 0px;
+                background-color: rgb(212, 231, 245);
+                border-radius: 20px;
+            }
+            to{
+                width: 700px;
+                /* border-radius: px; */
+            }
+        }
+        .container{
+            
+            display: flex;
+            border: 2px solid black;
+            border-radius: 25px;
+            background-color: rgb(212, 231, 245);
+            height: 500px;
+            width: 900px;
+            align-items: center;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="box">
+
+       </div>
+   </div>
+    
+</body>
+</html>

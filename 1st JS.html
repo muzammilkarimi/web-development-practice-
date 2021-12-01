@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | String and Strings methods</title>
+    <link rel="icon" href="hf.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Muzammil Ahmad Karimi</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam possimus dolorem cumque enim atque, tenetur
+            accusantium labore doloremque saepe ipsum maxime quis, veritatis, mollitia unde officiis fugit molestiae qui
+            esse doloribus ex eum aspernatur. Unde quasi fugit laudantium aliquid deleniti.</p>
+    </div>
+
+    <script>
+        var x = 65;
+        var y = 75;
+        console.log(x > y);
+
+        let a = 10;
+        let b = 20;
+
+        console.log("value of a+b is", a + b);
+        console.log("value of a-b is", a - b);
+        console.log("value of a*b is", a * b);
+        console.log("value of a/b is", a / b);
+
+        let c = b;
+        c += 2;
+        console.log(c);
+        var name='muzammil';
+        var company='maktech';
+        var year='2020'
+        var temp=`${name} is found a startup ${company} from ${year}`;
+        console.log(temp);
+        var len=temp.length;
+        console.log(`length of temp is ${len}`);
+        var str="this is muzammil";
+        console.log(str);
+        var position=str.indexOf('is');
+        console.log(position);
+        position=str.lastIndexOf('is');
+        console.log(position);
+        position=str.lastIndexOf('i');
+        console.log(position);
+        var substr=str.slice(1,7);//for substring 
+        console.log(substr);
+        var substring=str.substr(1,7);//for substring 
+        console.log(substring);
+        var replaced=str.replace('muzammil','mak');//replace 'muzammil' to 'mak'
+        console.log(str);
+        console.log(replaced);
+        console.log(str.toUpperCase());//to print upper case letter
+        console.log(str.toLowerCase());//to print lower case letter
+        var str2=" this is new string ";
+        console.log(str+str2);//to add two string
+        var strwspace="     to many spaces";
+        console.log(strwspace);
+        console.log(strwspace.trim());
+        var knowchar=str.charAt(3);//to know which char is that position
+        console.log(knowchar);
+        {
+        const a = "this cannot be changed";//work between middle bracket in different  
+        console.log(a);                      
+    }
+    let details={
+        ceo:"muzammil ahmad karimi",
+        name: "maktech",
+        name2: "makdesign",
+        name3: "questionbankz",
+        turnover: "1 trillion",
+    }
+    //for in loop
+    for(key in details){
+        console.log(`the ${key} of company ${details[key]}`);
+    }
+    {let name=[1,2,3,4,"harry"];
+    console.log(name);}
+    {let a = prompt("hi enter your name","guest");
+    console.log(a);}
+    let deletepost = confirm("do you really want to delete this post?");
+    if(deletepost){
+        console.log("your post has been deleted successfully");
+    }
+    else{
+        console.log("your post has not deleted");
+    }
+    alert("this is  alert");
+    let friends=["mak","muzammil","ahmad","karimi","mkarimi"];
+    //for of loop
+    for(element of friends){
+        console.log("hello " + element + " using for of");
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        body {
+            background-color: #4192b7;
+        }
+
+        .classfirst {
+            background-color: rgb(147, 181, 191);
+            border: 2px solid #414950;
+            border-top-left-radius: 33px;
+            border-bottom-right-radius: 33px;
+            padding: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            width: 523px;
+
+
+
+        }
+
+        .btn {
+            background-color: red;
+            padding: 5px 5px;
+            margin-left: 55px;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+
+        }
+
+        #button1 {
+            margin-left: 300px;
+            background-color: royalblue;
+        }
+
+        .btn:hover {
+            color: brown;
+            background-color: rgb(35, 39, 31);
+
+        }
+
+        #button1:hover {
+            background-color: rgb(196, 193, 23);
+            color: red;
+        }
+
+        img {
+            height: 470px;
+            border: 2px solid #414950;
+            border-top-left-radius: 33px;
+            border-bottom-right-radius: 33px;
+            box-sizing: content-box;
+            float: right;
+        }
+
+        .navbar {
+            background-color: #414950;
+
+            border-bottom-left-radius: 33px;
+            border-top-right-radius: 33px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px;
+            padding-top: 5px;
+
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            padding: 14px 10px;
+            color: blanchedalmond;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            color: rgb(147, 181, 191);
+        }
+
+        .search {
+            float: right;
+            color: rgb(147, 181, 191);
+            padding: 14px 75px;
+
+        }
+
+        .search input {
+            border: 2px solid #414950;
+            border-radius: 10px;
+            padding: 3px 17px;
+            width: 129px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search in this wabsite">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img src="C:\Users\Muzammil\Desktop\mak.jpg" alt="mak">
+    </div>
+    <div class="classfirst">
+        <h2>Our Mission</h2>
+        <p id="firstpara"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quibusdam veritatis nam autem
+            totam nemo modi assumenda incidunt quam non? Quis perspiciatis, molestiae repellendus distinctio repellat
+            eaque impedit ad voluptatibus accusantium labore corporis at quas corrupti eveniet, ex blanditiis sed unde
+            rem iure! Labore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</p>
+    </div>
+    <div class="classfirst">
+        <h2>About Us</h2>
+        <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</p>
+    </div>
+    <div class="classfirst">
+        <h2>Contact Us</h2>
+        <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</p>
+
+    </div>
+    <div>
+        <a href="" class="btn">Read more</a>
+        <button class="btn" id="button1">Contact Us</button>
+    </div>
+</body>
+
+</html>
